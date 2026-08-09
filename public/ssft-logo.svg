@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradients -->
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3B0" />
+      <stop offset="30%" stop-color="#E8B923" />
+      <stop offset="70%" stop-color="#C29410" />
+      <stop offset="100%" stop-color="#8C6700" />
+    </linearGradient>
+
+    <linearGradient id="goldBright" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A313" />
+      <stop offset="50%" stop-color="#FFE792" />
+      <stop offset="100%" stop-color="#E8B923" />
+    </linearGradient>
+
+    <linearGradient id="purpleRoyal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B1067" />
+      <stop offset="50%" stop-color="#3A0847" />
+      <stop offset="100%" stop-color="#1F0328" />
+    </linearGradient>
+
+    <radialGradient id="torchGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="1" />
+      <stop offset="50%" stop-color="#E8B923" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E8B923" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#E8B923" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#3A0847" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0D0F12" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Aura -->
+  <circle cx="400" cy="220" r="220" fill="url(#bgGlow)" />
+
+  <!-- Left Golden Wing -->
+  <g id="leftWing" filter="url(#goldGlow)">
+    <path d="M 330,190 C 270,120 180,100 120,130 C 100,140 80,165 95,185 C 110,205 160,195 210,205 C 150,215 110,240 125,260 C 140,280 190,250 240,240 C 180,260 150,290 170,305 C 190,320 230,285 280,265 C 240,295 220,320 240,330 C 260,340 300,300 340,270 L 350,210 Z" fill="url(#goldLight)" stroke="#FFF3B0" stroke-width="2" />
+    <!-- Wing Feathers Details -->
+    <path d="M 280,140 C 230,125 150,135 120,150" fill="none" stroke="#FFF3B0" stroke-width="2" opacity="0.8" />
+    <path d="M 290,170 C 220,160 160,175 135,190" fill="none" stroke="#FFF3B0" stroke-width="2" opacity="0.8" />
+    <path d="M 300,200 C 240,195 180,215 155,230" fill="none" stroke="#FFF3B0" stroke-width="1.5" opacity="0.7" />
+    <!-- Ruby Gems on Wing -->
+    <circle cx="160" cy="142" r="5" fill="#E11D48" stroke="#FFE792" stroke-width="1.5" />
+    <circle cx="190" cy="150" r="6" fill="#9333EA" stroke="#FFE792" stroke-width="1.5" />
+    <circle cx="220" cy="160" r="5" fill="#E11D48" stroke="#FFE792" stroke-width="1.5" />
+  </g>
+
+  <!-- Right Golden Wing -->
+  <g id="rightWing" filter="url(#goldGlow)">
+    <path d="M 470,190 C 530,120 620,100 680,130 C 700,140 720,165 705,185 C 690,205 640,195 590,205 C 650,215 690,240 675,260 C 660,280 610,250 560,240 C 620,260 650,290 630,305 C 610,320 570,285 520,265 C 560,295 580,320 560,330 C 540,340 500,300 460,270 L 450,210 Z" fill="url(#goldLight)" stroke="#FFF3B0" stroke-width="2" />
+    <!-- Wing Feathers Details -->
+    <path d="M 520,140 C 570,125 650,135 680,150" fill="none" stroke="#FFF3B0" stroke-width="2" opacity="0.8" />
+    <path d="M 510,170 C 580,160 640,175 665,190" fill="none" stroke="#FFF3B0" stroke-width="2" opacity="0.8" />
+    <path d="M 500,200 C 560,195 620,215 645,230" fill="none" stroke="#FFF3B0" stroke-width="1.5" opacity="0.7" />
+    <!-- Ruby Gems on Wing -->
+    <circle cx="640" cy="142" r="5" fill="#E11D48" stroke="#FFE792" stroke-width="1.5" />
+    <circle cx="610" cy="150" r="6" fill="#9333EA" stroke="#FFE792" stroke-width="1.5" />
+    <circle cx="580" cy="160" r="5" fill="#E11D48" stroke="#FFE792" stroke-width="1.5" />
+  </g>
+
+  <!-- Central Shield -->
+  <g id="shield">
+    <!-- Outer Golden Shield Frame -->
+    <path d="M 400,320 L 480,270 L 480,150 L 400,120 L 320,150 L 320,270 Z" fill="url(#goldLight)" stroke="#FFF3B0" stroke-width="4" filter="url(#goldGlow)" />
+    <!-- Inner Purple Shield Body -->
+    <path d="M 400,308 L 468,262 L 468,158 L 400,132 L 332,158 L 332,262 Z" fill="url(#purpleRoyal)" stroke="url(#goldBright)" stroke-width="3" />
+
+    <!-- Crown at Shield Top -->
+    <path d="M 350,125 L 360,95 L 380,110 L 400,85 L 420,110 L 440,95 L 450,125 Z" fill="url(#goldBright)" stroke="#FFF3B0" stroke-width="2" />
+    <circle cx="360" cy="93" r="3.5" fill="#E11D48" />
+    <circle cx="400" cy="83" r="4.5" fill="#FFE792" />
+    <circle cx="440" cy="93" r="3.5" fill="#E11D48" />
+
+    <!-- Flame / Torch Center -->
+    <circle cx="400" cy="130" r="25" fill="url(#torchGlow)" />
+    <path d="M 400,105 C 385,125 395,145 400,155 C 405,145 415,125 400,105 Z" fill="#FF4500" />
+    <path d="M 400,115 C 392,130 397,142 400,150 C 403,142 408,130 400,115 Z" fill="#FFD700" />
+    <!-- Torch Handle -->
+    <path d="M 395,155 L 405,155 L 402,180 L 398,180 Z" fill="url(#goldBright)" />
+  </g>
+
+  <!-- SSFT Letters Monogram on Shield -->
+  <g id="monogram" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" text-anchor="middle">
+    <!-- Shadowed Backing -->
+    <text x="402" y="248" font-size="78" fill="#1F0328" letter-spacing="2">SSFT</text>
+    <!-- Metallic Gold Monogram -->
+    <text x="400" y="245" font-size="78" fill="url(#goldBright)" stroke="#FFF3B0" stroke-width="2" letter-spacing="2" filter="url(#goldGlow)">SSFT</text>
+  </g>
+
+  <!-- Main SSFT Brand Typography below Badge -->
+  <g id="mainText" font-family="system-ui, -apple-system, sans-serif" font-weight="900" text-anchor="middle">
+    <!-- SSFT 3D Text -->
+    <text x="402" y="393" font-size="92" font-family="Impact, Arial Black, sans-serif" fill="#0D0F12" letter-spacing="8">SSFT</text>
+    <text x="400" y="390" font-size="92" font-family="Impact, Arial Black, sans-serif" fill="url(#goldLight)" stroke="#FFF3B0" stroke-width="2" letter-spacing="8" filter="url(#goldGlow)">SSFT</text>
+
+    <!-- ON WHICH YOU TRUST Banner Slogan -->
+    <text x="400" y="445" font-size="28" font-weight="800" fill="#E8B923" letter-spacing="8" font-style="italic">ON WHICH YOU TRUST</text>
+  </g>
+</svg>

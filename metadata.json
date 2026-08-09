@@ -1,0 +1,6 @@
+{
+  "name": "SSFT Esports",
+  "description": "Pre-launch landing page for SSF Tournaments - India's Trusted Esports Arena",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
